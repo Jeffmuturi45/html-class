@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZJ FROZE | Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <!-- Navbar Section -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">DJ ZJ FROZE</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="dj.html">DJ Mixes</a>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="spinner"></div>
+      <p>Loading ZJ FROZE...</p>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>I'm <span class="typewriter"></span></h1>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn">Hire Me</a>
+        <a href="dj.html" class="btn">Listen Now</a>
+      </div>
+      <div class="visitor-badge">
+        Visitors: <span id="visitor-count">0</span>
+      </div>
+    </div>
+
+    <!-- Floating Music Player -->
+    <div id="music-player">
+      <audio controls autoplay loop>
+        <source src="assets/mixes/sample.mp3" type="audio/mp3" />
+        Your browser does not support audio.
+      </audio>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a
+            href="https://wa.me/your-phone-number"
+            target="_blank"
+            class="social-icon"
+            title="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/your-profile"
+            target="_blank"
+            class="social-icon"
+            title="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/your-profile"
+            target="_blank"
+            class="social-icon"
+            title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@your-profile"
+            target="_blank"
+            class="social-icon"
+            title="TikTok"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </div>
+
+        <!-- DJ Page Link -->
+        <div class="dj-link">
+          <a href="dj.html" class="btn">Check out my DJ mixes</a>
+        </div>
+
+        <!-- Copyright Info -->
+        <p>&copy; 2025 DJ ZJ FROZE. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DJ ZJ FROZE | DJ Mixes</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/countdown"></script>
+  </head>
+  <body>
+    <!-- Back to Home -->
+    <a href="index.html" class="back-home"
+      ><i class="fas fa-arrow-left"></i> Back Home</a
+    >
+
+    <!-- DJ Mixes Section -->
+    <div class="dj-section">
+      <h1>DJ Mixes</h1>
+
+      <!-- YouTube Mixes -->
+      <div class="mixes">
+        <h2>YouTube Mixes</h2>
+        <div class="mix">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mix">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- HearThis Mixes -->
+      <div class="mixes">
+        <h2>HearThis.at Mixes</h2>
+        <div class="mix">
+          <iframe
+            scrolling="no"
+            style="border-radius: 5px"
+            id="hearthis_at_track_11345764"
+            width="100%"
+            height="150"
+            src="https://app.hearthis.at/embed/11345764/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
+            frameborder="0"
+            allowtransparency
+            allow="autoplay"
+            ><p>
+              Listen to
+              <a
+                href="https://hearthis.at/zj-froze/arbantone-minimix1-zj-frozesounds/"
+                target="_blank"
+                >Arban_tone mini_mix1 Zj Froze_Sounds</a
+              >
+              <span>by</span
+              ><a href="https://hearthis.at/zj-froze/" target="_blank"
+                >ZJ FROZE</a
+              >
+              <span>on</span>
+              <a href="https://hearthis.at/" target="_blank">hearthis.at</a>
+            </p></iframe
+          >
+        </div>
+        <div class="mix">
+          <iframe
+            scrolling="no"
+            style="border-radius: 5px"
+            id="hearthis_at_track_11892268"
+            width="100%"
+            height="150"
+            src="https://app.hearthis.at/embed/11892268/transparent_black/?hcolor=&color=&style=2&block_size=2&block_space=1&background=1&waveform=0&cover=0&autoplay=0&css="
+            frameborder="0"
+            allowtransparency
+            allow="autoplay"
+            ><p>
+              Listen to
+              <a
+                href="https://hearthis.at/zj-froze/carribean-reggae-ep01-zjfroze/"
+                target="_blank"
+                >Carribean Reggae Ep01 Zj_Froze</a
+              >
+              <span>by</span
+              ><a href="https://hearthis.at/zj-froze/" target="_blank"
+                >ZJ FROZE</a
+              >
+              <span>on</span>
+              <a href="https://hearthis.at/" target="_blank">hearthis.at</a>
+            </p></iframe
+          >
+        </div>
+      </div>
+
+      <!-- Countdown Timer for Upcoming Mix -->
+      <div class="countdown-timer">
+        <h2>Upcoming Mix: <span id="countdown"></span></h2>
+      </div>
+
+      <!-- Contact Me Button -->
+      <div class="contact-btn">
+        <a href="https://wa.me/254100984091" class="btn" target="_blank"
+          ><i class="fab fa-whatsapp"></i> Contact Me on WhatsApp</a
+        >
+        <a href="mailto:jeffmuturi45@gmail.com" class="btn"
+          ><i class="fas fa-envelope"></i> Email Me</a
+        >
+      </div>
+    </div>
+
+    <!-- Floating Music Player -->
+    <div class="video-player">
+      <video controls>
+        <source src="video/2025-04-19 15-10-06.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Countdown Timer (Example)
+      var countDownDate = new Date("2025-04-30T20:00:00").getTime();
+      var countdownFunction = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+          clearInterval(countdownFunction);
+          document.getElementById("countdown").innerHTML = "Event Started!";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
